@@ -1,0 +1,19 @@
+programa
+{
+   funcao inicio()
+   {
+       // Declaração dos preços dos livros
+       real livro1 = 26.90
+       real livro2 = 34.10
+       real livro3 = 29.90
+       real livro4 = 26.90
+       real livro5 = 50.00
+       real livro6 = 26.90
+
+       // Cálculo do valor total
+       real total = livro1 + livro2 + livro3 + livro4 + livro5 + livro6
+
+       // Exibição do valor total
+       escreva("O valor total da compra dos livros Harry Potter é: R$ ", total)
+   }
+}
