@@ -1,0 +1,31 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		// Constantes
+        real limitePeso = 50.0
+        real valorMultaPorQuilo = 4.50
+
+        // Variáveis
+        real peso_de_peixes
+        real excesso = 0
+        real multa = 0
+
+        // Entrada de dados
+        escreva("Digite o peso de peixes pescados (em kg): ")
+        leia(peso_de_peixes)
+
+        // Cálculo do excesso e da multa
+        se (peso_de_peixes > limitePeso)
+        {
+            excesso = peso_de_peixes - limitePeso
+            multa = excesso * valorMultaPorQuilo
+        }
+
+        // Saída de informações
+        escreva ("Peso total de peixes pescados: ", peso_de_peixes / 2, " kg")
+        escreva ("Excesso de peso: ", excesso / 2, " kg")
+        escreva ("Multa a ser paga: R$ ", multa / 2)
+	}
+}
