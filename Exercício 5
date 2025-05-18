@@ -1,0 +1,19 @@
+programa
+{
+   funcao inicio()
+   {
+       // Declaração da variável para o raio e a área
+       real raio, area
+       real pi = 3.14159
+
+       // Entrada do valor do raio
+       escreva("Digite o valor do raio do círculo: ")
+       leia(raio)
+
+       // Cálculo da área do círculo
+       area = pi * (raio * raio)
+
+       // Exibição do resultado
+       escreva("\nA área do círculo com raio ", raio, " é: ", area)
+   }
+}
