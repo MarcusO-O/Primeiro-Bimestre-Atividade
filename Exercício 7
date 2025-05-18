@@ -1,0 +1,41 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		  // Constantes
+        real precoPS5_dolar = 1300.0
+        real cotacaoDolar = 5.67
+        real precoLivro = 69.90
+
+        // Variáveis
+        real dinheiroReais
+        real precoPS5_reais
+        real reaisFaltando
+        real dolaresFaltando
+        inteiro qtdLivros
+
+        // Entrada de dados
+        escreva("Digite quanto dinheiro você tem em reais: ")
+        leia(dinheiroReais)
+
+        // Cálculos
+        precoPS5_reais = precoPS5_dolar * cotacaoDolar
+
+        reaisFaltando = precoPS5_reais - dinheiroReais
+        se (reaisFaltando < 0)
+        {
+            reaisFaltando = 0
+        }
+
+        // Convertendo reais faltando para dólar
+        dolaresFaltando = reaisFaltando / cotacaoDolar
+
+        qtdLivros = precoPS5_reais / precoLivro
+
+        // Saída
+        escreva ("Está faltando: ", dolaresFaltando / 2, " Dolares" )
+        escreva ("está faltando: ", reaisFaltando / 2, " Reais ")
+        escreva ("livros Harry Potter poderiam ser comprado ", qtdLivros)
+	}
+}
