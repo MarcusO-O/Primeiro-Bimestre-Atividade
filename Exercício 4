@@ -1,0 +1,18 @@
+programa
+{
+   funcao inicio()
+   {
+       // Declaração da variável para metros e centímetros
+       real metros, centimetros
+
+       // Entrada do valor em metros
+       escreva("Digite o valor em metros: ")
+       leia(metros)
+
+       // Conversão para centímetros
+       centimetros = metros * 100
+
+       // Exibição do resultado
+       escreva("\n", metros, " metros equivalem a ", centimetros, " centímetros.")
+   }
+}
