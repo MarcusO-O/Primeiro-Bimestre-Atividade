@@ -1,0 +1,20 @@
+programa
+{
+   funcao inicio()
+   {
+       // Declaração das variáveis mãe e filha
+       cadeia mae = "tess"
+       cadeia filha = "anna"
+       cadeia temp
+
+       // Troca dos valores (usando variável temporária)
+       temp = mae
+       mae = filha
+       filha = temp
+
+       // Exibição dos valores após a troca
+       escreva("\nApós a troca:\n")
+       escreva("Mãe: ", mae)
+       escreva("\nFilha: ", filha)
+   }
+}
